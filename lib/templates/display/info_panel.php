@@ -23,8 +23,9 @@ $loggedin = $_SESSION['loggedin'];
     </li>
 -->
     <?php }?>
-    
+    <?php if($loggedin){ ?>
     <li><a class="icon icon-params" href="<?php echo $GLOBALS['home'] . 'admin/';?>" target="_blank">admin panel</a></li>
+    <?php }?>
     <li><a></a></li>
     <?php if($loggedin or $show_uploader){ ?>
     <li><a class="icon icon-user"><?php echo $uploader; ?></a></li>
